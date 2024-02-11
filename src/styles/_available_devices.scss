@@ -1,0 +1,42 @@
+.available-devices {
+  padding-top: 4rem;
+  color: #fff;
+  margin-bottom: 4rem;
+
+  h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+  }  
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    &__item {
+      text-align: center;
+      list-style-type: none;
+
+      h4 {
+        color: #fff;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+
+      li {
+        list-style-type: none;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+    }
+  }
+
+}
