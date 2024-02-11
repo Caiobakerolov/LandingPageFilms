@@ -1,0 +1,9 @@
+.video {  
+  
+  &__content {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;  
+    gap: 2rem;
+  }
+}

@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>    
+  <title>Vikings Valhalla</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">  
@@ -16,8 +18,8 @@
     </div>       
   </section> 
 
-  <section>
-    <div class="description">
+  <section class="serieInformation">
+    <div class="serieInformation__content">
       <h1>Series information</h1>
       <p>
         "Vikings: Valhalla" is a vibrant historical adventure series from Netflix that continues the epic saga initiated by the original series "Vikings". Set at the dawn of the 11th century, it delves into the legendary tales of iconic figures such as Leif Eriksson, Freydís Eiríksdóttir, and Harald Hardrada, amidst the twilight of the Viking era. Confronting the conflicts between pagan Vikings and the Christian kingdoms of Europe, "Vikings: Valhalla" immerses viewers in spectacular battles, political intrigues, and the unyielding quest for honour and glory. Boasting splendid production values and compelling storytelling, this series promises to captivate fans of the historical and adventure genres, continuing the legacy of its predecessor with new stories of courage and conquest.
@@ -25,17 +27,50 @@
     </div>    
   </section>
 
-  <section>
-    <div class="video">
+  <section class="carouselImages">
+    <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+      <div class="carousel-inner">
+        <div>
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="./src/images/scenes/1.jpg" class="w-100 rounded" alt="vikings">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./src/images/scenes/2.jpg" class="w-100 rounded" alt="vikings">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./src/images/scenes/3.jpg" class="w-100 rounded" alt="vikings">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./src/images/scenes/4.jpg" class="w-100 rounded" alt="vikings">
+          </div>          
+        </div>          
+        <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button type="button" class="carousel-control-next " data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>                 
+        </div>        
+      </div>        
+    </div>
+  </section>
+
+  <section class="video">
+    <div class="video__content">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Yi4YnwFT7Gk?si=p6OQWqM3ye_aXEN-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/-5WPVWGM2bY?si=97UhNvCBROWdNXTO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>             
     </div>
   </section>
 
-  <section>
-    <nav class="cast">
+  <section class="description">
+    <nav class="description__content">
       <h1>Starring</h1>
-      <ul>
+      <ul class="description__content__item">
         <li>
           <a href="https://www.google.com.br/search?q=Sam+Corlett+vikings&sca_esv=da8adb7374804231&tbm=isch&source=lnms&sa=X&ved=2ahUKEwi2q47btKKEAxXjxjgGHcS_AQwQ_AUoAXoECAQQAw&cshid=1707624443449163&biw=1536&bih=695&dpr=1.25" target="_blank">Sam Corlett,</a>
           <a href="https://www.google.com.br/search?q=Leo+Suter+vikings&sca_esv=da8adb7374804231&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjK3IGqtqKEAxX8sFYBHa3xCP4Q_AUoAXoECAEQAw&biw=1536&bih=695&dpr=1.25" target="_blank">Leo Suter,</a>
@@ -53,7 +88,7 @@
         </li>        
       </ul>
     </nav>
-    <nav class="descriptionMovie">
+    <nav class="description__movie">
       <ul>
         <li>
           <p><Strong>Genres</Strong> : Dramatic series, Action and adventure series, Period pieces, American series</p>
@@ -62,7 +97,7 @@
           <p><Strong>Scenes and moments</Strong> : Violent, Dark, Thrilling</p>
         </li>        
         <li>
-          <p><Strong>Age rating</Strong> : <a class="btnAge" href="https://help.netflix.com/pt/node/2064" target="_blank">MA 15+</a> Strong sex scenes, injury detail and action violence</p>
+          <p><Strong>Age rating</Strong> : <a href="https://help.netflix.com/pt/node/2064" target="_blank">MA 15+</a> Strong sex scenes, injury detail and action violence</p>
         </li>        
       </ul>
     </nav>
@@ -220,19 +255,130 @@
     </ul>
   </section>
 
-  <section>
-    
+  <section class="faq">
+    <h2 class="Title">FAQ</h2>
+    <ul class="faq__questions">
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">
+          <i class="bi bi-person-lines-fill"></i>
+          Account and billing
+        </div>
+        <div class="faq__questions__item__answer">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi totam tempore ipsa perspiciatis delectus quod, praesentium voluptate iure debitis nostrum earum laborum enim a at libero nobis sed nemo ipsum.
+        </div>
+      </li>
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">
+          <i class="bi bi-gear"></i>
+          Fix a problem
+        </div>
+        <div class="faq__questions__item__answer">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ad repudiandae eaque architecto quo saepe, ex vitae provident veniam velit est, minima, tempore tenetur harum totam optio odio laudantium ea.
+        </div>
+      </li>
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">
+          <i class="bi bi-tv"></i>
+          Play and watch
+        </div>
+        <div class="faq__questions__item__answer">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sequi eius aliquam nesciunt. Ad nesciunt, tempore id ullam quasi nam sunt esse, eveniet beatae delectus nulla, voluptas necessitatibus saepe minima.
+        </div>
+      </li>
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">
+          <i class="bi bi-airplane"></i>
+          Introduction
+        </div>
+        <div class="faq__questions__item__answer">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consequuntur laudantium minima voluptatum dignissimos? Debitis, sapiente! Eligendi non sit voluptate, repudiandae esse, omnis, in blanditiis quidem eius ut mollitia expedita.
+        </div>
+      </li>      
+    </ul> 
   </section>
 
   <footer>
     <div class="footer">
       <a href="https://www.netflix.com" target="_blank">
-        <img src="./src/images/NETFLIX.jpg" alt="symbol netflix">
-      </a>      
+        <img src="./src/images/NETFLIX.jpg" alt="Netflix">
+      </a>
+
+      <nav class="footer__icons">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/netflix/" target="_blank">              
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>         
+          <li>
+            <a href="https://www.instagram.com/Netflix/" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>         
+          <li>
+            <a href="https://www.youtube.com/@Netflix" target="_blank">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </li>         
+        </ul>
+      </nav>
+      
+      <nav class="footer__item">
+        <ul class="footer__item__links">
+          <li>
+            <a href="https://www.netflix.com/browse/audio-description" target="_blank">audio description</a>
+          </li>
+          <li>
+            <a href="https://ir.netflix.net/ir-overview/profile/default.aspx" target="_blank">relationship with investors</a>
+          </li>
+          <li>
+            <a href="https://help.netflix.com/legal/privacy" target="_blank">Privacy</a>
+          </li>
+          <li>
+            <a href="https://help.netflix.com/pt/contactus" target="_blank">Contact</a>
+          </li>
+        </ul> 
+        <ul class="footer__item__links">
+          <li>
+            <a href="https://help.netflix.com/pt/" target="_blank">help Center</a>
+          </li>
+          <li>
+            <a href="https://jobs.netflix.com/" target="_blank">Careers</a>
+          </li>
+          <li>
+            <a href="https://help.netflix.com/legal/notices" target="_blank">Legal Notices</a>
+          </li>
+        </ul> 
+        <ul class="footer__item__links">
+          <li>
+            <a href="https://www.netflix.com/au-pt/redeem" target="_blank">Prepaid card</a>
+          </li>
+          <li>
+            <a href="https://www.netflix.shop/" target="_blank">Netflix Shop</a>
+          </li>
+          <li>
+            <a href="https://help.netflix.com/legal/privacy#cookies" target="_blank">Cookie preferences</a>
+          </li>
+        </ul> 
+        <ul class="footer__item__links">
+          <li>
+            <a href="https://media.netflix.com/pt_br/" target="_blank">Press</a>
+          </li>
+          <li>
+            <a href="https://help.netflix.com/legal/termsofuse" target="_blank">Terms of use</a>
+          </li>
+          <li>
+            <a href="https://help.netflix.com/legal/corpinfo" target="_blank">Corporate information</a>
+          </li>
+        </ul>  
+      </nav>
+      
+      <P>&copy; 1997 - 2024 Netflix Inc.</P>    
       <p>&copy; All rights reserved Mr. Baker</p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./src/js/main.js"></script>
   
 </body>

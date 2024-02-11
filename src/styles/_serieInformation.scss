@@ -1,0 +1,24 @@
+.serieInformation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+  &__content {
+    h1 {
+      color: rgb(229,9,20);
+      text-align: center;  
+      font-size: 2rem;
+      padding-top: 3rem;
+    }
+
+    p {
+      color: #fff;
+      text-align: center;
+      font-size: 1.2rem;
+      width: 50%;
+      margin: 0 auto;
+      padding-top: 2rem;
+      font-family: sans-serif;
+    }
+  }
+}
