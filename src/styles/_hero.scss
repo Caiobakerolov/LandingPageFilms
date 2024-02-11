@@ -1,0 +1,33 @@
+.hero {  
+  background-image: linear-gradient(rgb(0 0 0 / .1), transparent, black) , linear-gradient(380deg,transparent, black), url(../images/vikingsValhalla.jpeg);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+
+  &__content {
+    display: flex;
+    justify-content: right;
+    padding-top: 1rem;
+    padding-right: 1rem;
+  }
+
+  &__content a {
+    background-color: rgb(229,9,20);
+    padding: .6rem;
+    border-radius: 8px;
+    width: 5rem;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__content a:hover {
+    background-color: rgba(229,9,20, .6);
+  }
+  
+}

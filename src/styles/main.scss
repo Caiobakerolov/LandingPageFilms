@@ -1,5 +1,108 @@
-$bgColor: orange;
+@use 'hero';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: $bgColor;
+  background-color: #100f0f;  
+  font-family: "Protest Riot", sans-serif;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.description h1 {
+  color: rgb(229,9,20);
+  text-align: center;  
+  font-size: 2rem;
+  padding-top: 3rem;
+}
+
+.description p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  gap: 2rem;  
+}
+
+nav h1 {
+  text-align: center;
+  color: rgb(229,9,20);
+  font-size: 2rem;
+}
+
+.cast a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;  
+}
+
+.cast a:hover {
+  color: rgba(229,9,20, .4);  
+}
+
+.cast ul {
+  display: flex;
+  justify-content: center;flex-direction: column-reverse;  
+  padding-top: 2rem;  
+  width: 42%;
+  margin: 0 auto;
+  line-height: 2rem;
+  letter-spacing: 2px;
+}
+
+.descriptionMovie {
+  color: #fff;
+  padding-top: 4rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.descriptionMovie strong {
+  color: rgb(229,9,20);
+  font-size: 1.4rem;
+}
+
+.descriptionMovie p {
+  font-size: 1rem;
+}
+
+.descriptionMovie .btnAge {
+  border: 1px solid;
+  padding: .4rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.footer img {
+  width: 100px;
+}
+
+.footer p {
+  color: #fff;  
 }
