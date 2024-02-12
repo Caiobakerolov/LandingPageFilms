@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const buttons = document.querySelectorAll('[data-tab-button]'); 
-  const questions = document.querySelectorAll('[data-faq-question]'); 
-  
+  const questions = document.querySelectorAll('[data-faq-question]');    
 
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function(btn) {
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
   for (let i = 0; i < questions.length; i++) {
     questions[i].addEventListener('click', openOrCloseAnswer);
   }
-
 })
 
 function openOrCloseAnswer(element) {
@@ -42,3 +40,17 @@ function hideAllTab() {
     tabsContainer[i].classList.remove('shows__list--is-active');
   }
 }
+
+$(document).ready(function() {  
+  $('form').validate({
+    rules: {      
+      email2: {
+        required: true,
+        email: true,
+      },
+    },
+    messages: {      
+      email2: '<p style="color: red;">Please, enter your full email</p>',      
+    },
+  })
+});

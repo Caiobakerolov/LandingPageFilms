@@ -15,7 +15,7 @@
   <section class="hero">                       
     <div class="hero__content">      
       <a href="https://www.netflix.com/search?q=viki&jbv=81149450" target="_blank">Sign in</a>            
-    </div>       
+    </div>     
   </section> 
 
   <section class="serieInformation">
@@ -62,8 +62,10 @@
 
   <section class="video">
     <div class="video__content">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Yi4YnwFT7Gk?si=p6OQWqM3ye_aXEN-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/-5WPVWGM2bY?si=97UhNvCBROWdNXTO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>             
+      <iframe src="https://www.youtube.com/embed/Yi4YnwFT7Gk?si=p6OQWqM3ye_aXEN-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                   
+    </div>
+    <div class="video__content">
+      <iframe src="https://www.youtube.com/embed/-5WPVWGM2bY?si=97UhNvCBROWdNXTO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </section>
 
@@ -256,45 +258,71 @@
   </section>
 
   <section class="faq">
-    <h2 class="Title">FAQ</h2>
+    <h2 class="Title">Frenquently Asked Questions</h2>
     <ul class="faq__questions">
       <li class="faq__questions__item">
-        <div data-faq-question class="faq__questions__item__question">
-          <i class="bi bi-person-lines-fill"></i>
-          Account and billing
+        <div data-faq-question class="faq__questions__item__question">          
+          Whats is Netflix ?
         </div>
         <div class="faq__questions__item__answer">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi totam tempore ipsa perspiciatis delectus quod, praesentium voluptate iure debitis nostrum earum laborum enim a at libero nobis sed nemo ipsum.
+          Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more on thousands of internet-connected devices.You can watch as much as you want, whenever you want – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week! 
         </div>
       </li>
       <li class="faq__questions__item">
-        <div data-faq-question class="faq__questions__item__question">
-          <i class="bi bi-gear"></i>
-          Fix a problem
+        <div data-faq-question class="faq__questions__item__question">          
+          How much does Netflix cost ?
         </div>
         <div class="faq__questions__item__answer">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ad repudiandae eaque architecto quo saepe, ex vitae provident veniam velit est, minima, tempore tenetur harum totam optio odio laudantium ea.
+          Watch Netflix on your smartphone, tablet, Smart TV, laptop or streaming device, all for one fixed monthly fee. Plans range from $6.99 to $22.99 per month. No extra costs, no contracts.
         </div>
       </li>
       <li class="faq__questions__item">
-        <div data-faq-question class="faq__questions__item__question">
-          <i class="bi bi-tv"></i>
-          Play and watch
+        <div data-faq-question class="faq__questions__item__question">         
+          Where can I watch Netflix ?
         </div>
         <div class="faq__questions__item__answer">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sequi eius aliquam nesciunt. Ad nesciunt, tempore id ullam quasi nam sunt esse, eveniet beatae delectus nulla, voluptas necessitatibus saepe minima.
+          Watch anywhere, at any time. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.You can also download your favourite shows with the iOS, Android or Windows 10 app. Use downloads to watch titles while you're on the go and without an internet connection. Take Netflix with you anywhere.
         </div>
       </li>
       <li class="faq__questions__item">
-        <div data-faq-question class="faq__questions__item__question">
-          <i class="bi bi-airplane"></i>
-          Introduction
+        <div data-faq-question class="faq__questions__item__question">          
+          How do I cancel ?
         </div>
         <div class="faq__questions__item__answer">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consequuntur laudantium minima voluptatum dignissimos? Debitis, sapiente! Eligendi non sit voluptate, repudiandae esse, omnis, in blanditiis quidem eius ut mollitia expedita.
+          Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account at any time.
         </div>
       </li>      
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">          
+          What can I watch on Netflix ?
+        </div>
+        <div class="faq__questions__item__answer">
+          Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix Originals and more. Watch as much as you want, at any time that you want.
+        </div>
+      </li>      
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">          
+          Is Netflix good for kids ?
+        </div>
+        <div class="faq__questions__item__answer">
+          The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+        </div>
+      </li>     
     </ul> 
+  </section>
+
+  <section class="register">
+    <p>Ready to watch Netflix? Enter your email to create or restart your membership.</p>
+    <div class="register__item" id="bottomForm">
+      <form class="register__item__form">
+        <div class="register__item__form__container">
+          <input type="email" id="email2" name="email2" placeholder="Email address" class="register__item__email">
+        </div>
+        <div>          
+          <input type="submit" value="Get Started >" class="register__item__btn">
+        </div>        
+      </form>           
+    </div>
   </section>
 
   <footer>
@@ -379,6 +407,9 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./src/js/jQuery.js"></script>
+  <script src="./src/js/jquery.mask.min.js"></script>
+  <script src="./src/js/jquery.validate.min.js"></script>
   <script src="./src/js/main.js"></script>
   
 </body>

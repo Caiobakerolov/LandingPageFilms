@@ -1,0 +1,71 @@
+@use 'variables';
+
+.register {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 4rem;
+  padding-bottom: 4rem;  
+
+  p {
+    color: variables.$ColorNeutral;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      padding: 1rem;  
+    }
+
+  }  
+
+  &__item {
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;    
+   
+    &__email {
+      padding: 1rem;
+      border-radius: 6px;
+      background-color: variables.$fourthColor;      
+      font-size: 1rem;
+      border: 1px solid variables.$fifthColor;
+      color: variables.$ColorNeutral;
+      width: 500px;
+      
+      @media (max-width: 768px) {
+        width: 350px;                
+      }
+      
+    }
+
+    &__btn {
+      background-color: variables.$firstColor;
+      color: variables.$ColorNeutral;
+      padding: .9rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    &__form {
+      display: flex;
+      gap: 1rem;
+
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;                 
+      }
+
+      &__container {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
