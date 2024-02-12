@@ -1,3 +1,5 @@
+@use 'variables';
+
 .serieInformation {
   display: flex;
   justify-content: center;
@@ -5,14 +7,14 @@
   
   &__content {
     h1 {
-      color: rgb(229,9,20);
+      color: variables.$firstColor;
       text-align: center;  
       font-size: 2rem;
       padding-top: 3rem;
     }
 
     p {
-      color: #fff;
+      color: variables.$ColorNeutral;
       text-align: center;
       font-size: 1.2rem;
       width: 50%;

@@ -1,3 +1,5 @@
+@use 'variables';
+
 .shows {
   padding:  2vw 5.6vw;
   padding-top: 8rem;
@@ -30,7 +32,7 @@
 
     &__button {
       font-family: "Protest Riot", sans-serif;
-      color: #fff;
+      color: variables.$ColorNeutral;
       font-size: 1.6rem;
       border: none;      
       background: none;
@@ -39,7 +41,7 @@
       border-bottom: 4px solid transparent;     
 
       &--is-active {
-        border-bottom: 4px solid #fff;
+        border-bottom: 4px solid variables.$ColorNeutral;
       }
     }
   }

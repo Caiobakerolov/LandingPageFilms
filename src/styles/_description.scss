@@ -1,3 +1,5 @@
+@use 'variables';
+
 .description {
 
   &__content {
@@ -5,7 +7,7 @@
 
     h1 {
       text-align: center;
-      color: rgb(229,9,20);
+      color: variables.$firstColor;
       font-size: 2rem;
     }
 
@@ -25,13 +27,13 @@
 
         a {
           text-decoration: none;
-          color: #fff;
+          color: variables.$ColorNeutral;
           font-size: 1.2rem;
           cursor: pointer;  
           font-family: sans-serif;
 
           &:hover {
-            color: rgba(229,9,20, .4);  
+            color: variables.$secondColor;  
           }
         }
       }
@@ -39,7 +41,7 @@
   }
 
   &__movie {
-    color: #fff;
+    color: variables.$ColorNeutral;
     padding-top: 4rem;
     text-align: center;
     line-height: 2rem;
@@ -54,7 +56,7 @@
       }
 
       strong {
-        color: rgb(229,9,20);
+        color: variables.$firstColor;
         font-size: 1.4rem;
         font-family: "Protest Riot", sans-serif;
       }
@@ -63,7 +65,7 @@
         border: 1px solid;
         padding: .4rem;
         text-decoration: none;
-        color: #fff;
+        color: variables.$ColorNeutral;
       }
 
     }

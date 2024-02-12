@@ -1,11 +1,13 @@
+@use 'variables';
+
 .available-devices {
   padding-top: 4rem;
-  color: #fff;
+  color: variables.$ColorNeutral;
   margin-bottom: 4rem;
 
   h2 {
     text-align: center;
-    color: #fff;
+    color: variables.$ColorNeutral;
     margin-bottom: 4rem;
     font-size: 2rem;
   }  
@@ -20,7 +22,7 @@
       list-style-type: none;
 
       h4 {
-        color: #fff;
+        color: variables.$ColorNeutral;
         font-size: 2rem;
         margin-bottom: 2rem;
         margin-top: 2rem;

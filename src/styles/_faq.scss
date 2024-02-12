@@ -1,3 +1,5 @@
+@use 'variables';
+
 .faq {
   width: 90%;
   margin: 0 auto;
@@ -6,19 +8,19 @@
   h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #fff;
+    color: variables.$ColorNeutral;
     font-size: 2rem;
   }
 
   &__questions {    
 
     &__item {
-      background-color: #1b1a1a;
+      background-color: variables.$thirdColor;
       margin-bottom: .5rem;
       list-style-type: none;     
 
       &__question {
-        color: #fff;
+        color: variables.$ColorNeutral;
         font-size: 1.4rem;
         padding: 1.4rem;
         display: block;
@@ -44,7 +46,7 @@
       &__answer {
         height: 0;
         overflow: hidden;
-        color: #fff;
+        color: variables.$ColorNeutral;
         font-family: sans-serif;
         padding: 0 2rem;
         transition: height, .5s ease;
